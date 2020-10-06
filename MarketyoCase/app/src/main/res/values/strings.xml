@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MarketyoCase</string>
+
+    <string name="showMore">Show More</string>
+    <string name="readComment">Read Comments</string>
+    <string name="errorMessage">An error Fetching data..</string>
+
+    <string name="postTitle">Post Title</string>
+    <string name="postBody">Post Body</string>
+
+</resources>

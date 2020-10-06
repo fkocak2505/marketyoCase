@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#429c24</color>
+    <color name="colorPrimaryDark">#01bb51</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="lineColor">#e2e2e2</color>
+    <color name="backgroundColor">#f5f5f5</color>
+    <color name="textViewBackgroundColor">#01bb51</color>
+    <color name="textColor">#191919</color>
+    <color name="whiteTextColor">#FFFFFF</color>
+
+    <color name="progressEndColor">#00ffffff</color>
+
+</resources>

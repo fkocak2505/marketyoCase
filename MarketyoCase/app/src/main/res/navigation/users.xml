@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/users"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.marketyocase.marketyocase.view.user.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/actionUserFragment2UserPostFragment"
+            app:destination="@id/userPostsFragment">
+
+
+            <argument
+                android:name="userId"
+                app:argType="string"
+                app:nullable="false" />
+
+        </action>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/userPostsFragment"
+        android:name="com.marketyocase.marketyocase.view.userPost.UserPostsFragment"
+        android:label="fragment_user_posts"
+        tools:layout="@layout/fragment_user_posts">
+        <action
+            android:id="@+id/actionUserPostFragment2PostDetailFragment"
+            app:destination="@id/postDetailFragment">
+
+            <argument
+                android:name="userPostItem"
+                app:argType="string"
+                app:nullable="false" />
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.marketyocase.marketyocase.view.postDetail.PostDetailFragment"
+        android:label="fragment_post_detail"
+        tools:layout="@layout/fragment_post_detail">
+        <action
+            android:id="@+id/actionPostDetail2PostComments"
+            app:destination="@id/postCommentsFragment">
+
+            <argument
+                android:name="postId"
+                app:argType="string"
+                app:nullable="false" />
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/postCommentsFragment"
+        android:name="com.marketyocase.marketyocase.view.commentsPost.PostCommentsFragment"
+        android:label="fragment_post_comments"
+        tools:layout="@layout/fragment_post_comments" />
+</navigation>
