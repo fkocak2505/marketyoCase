@@ -40,7 +40,7 @@
 
 - Navigation Controller üzerinde yer alan fragment ayarlamaları "res->navigation->users.xml" içerisinde ayarlandı.
 
-- Uygulama içeriisnde 4 adet fragment yer almaktadır. Bunlar;
+- Uygulama içerisinde 4 adet fragment yer almaktadır. Bunlar;
   - UserFragment
   - UserPostsFragment
   - PostDetailFragment
